@@ -54,6 +54,8 @@ ul {
 .links {
 	color: white;
 	text-decoration: none;
+	border: 2px solid white;
+	padding: 5px;
 }
 
 .profile li a {
