@@ -13,6 +13,7 @@ body {
 	text-align: center;
 	margin: auto;
 	margin-top: 5%;
+	margin-bottom: 5%;
 	color: white;
 	font-family: 'Verdana', sans-serif;
 }
@@ -25,7 +26,7 @@ body {
 
 .profile h1 {
 	font-size: 40px;
-	letter-spacing: 4px;
+	letter-spacing: 2px;
 	font-weight: bold;
 }
 
@@ -58,10 +59,14 @@ ul {
 	color: #b9b9b9;
 }
 
+.fa:hover {
+	color: #b9b9b9;
+}
+
 .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
+    padding: 10px;
+    font-size: 15px;
+    width: 15px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
