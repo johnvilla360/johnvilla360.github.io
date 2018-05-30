@@ -59,13 +59,9 @@ ul {
 	color: #b9b9b9;
 }
 
-.fa:hover {
-	color: #b9b9b9;
-}
-
 .fa {
     padding: 10px;
-    font-size: 15px;
+    font-size: 30px;
     width: 15px;
     text-align: center;
     text-decoration: none;
