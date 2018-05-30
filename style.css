@@ -51,6 +51,11 @@ ul {
 	list-style: none;
 }
 
+.links {
+	color: white;
+	text-decoration: none;
+}
+
 .profile li a {
 	transition: all ease-in-out 250ms;
 }
