@@ -20,8 +20,6 @@ body {
 
 .profile-img {
 	border-radius: 50%;
-	width: 150px;
-	height: 150px;
 }
 
 .profile h1 {
@@ -62,7 +60,7 @@ ul {
 .fa {
     padding: 10px;
     font-size: 30px;
-    width: 25px;
+    width: 30px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
