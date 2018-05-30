@@ -55,8 +55,7 @@ ul {
 	color: white;
 	text-decoration: none;
 	border: 2px solid white;
-	padding: 20px;
-	margin: auto;
+	padding: 0px 20px 0px 20px;
 }
 
 .profile li a {
