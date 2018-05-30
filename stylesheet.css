@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	background: url(http://oi68.tinypic.com/oa0sbl.jpg);
+	background-image: url("http://oi68.tinypic.com/oa0sbl.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
