@@ -1,64 +1,93 @@
-/** STYLESHEET.CSS */
-
-/** -----------------------NAV BAR--------------------------------- */
-.navbar .navbar-header,
-.navbar-collapse, .navbar-nav {
-    display: inline-block;
-    vertical-align: top;
-    padding-left: 0;
-    padding-right: 0;
+body {
+	margin: 0;
+	padding: 0;
+	background: url(http://oi68.tinypic.com/oa0sbl.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-@media (max-width: 768px) {
-    .navbar-collapse  {
-        display: block;
-    }
-
-    .navbar-nav > li {
-    	margin-left: 1em;
-    	margin-right: 1em;
-    }
-}
-
-.navbar-nav li{
-	padding-left: 110px;
-	padding-right: 30px;
-}
-/** -----------------------NAV BAR--------------------------------- */
-
-/** -----------------------HEADER--------------------------------- */
-h1 {
-	position: relative;
-	top: 10px;
-	padding-top: 50px;
-	padding-bottom: 0px;
-	background: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.5));
-	background-attachment: fixed;
-	color: white;
-}
-
-h1 img {
-	height: auto;
-	width: auto;
-	max-width: 200px;
-	max-height: 200px;
-	border: 3px dotted white;
-	border-radius: 100%;
-	background-attachment: fixed;
-}
-
-#title {
-	color: white;
-}
-
-#picQuote {
-	font-family: 'Verdana';
+.profile {
+	width: 450px;
+	background: rgba(0, 0, 0, 0.4);
+	padding: 40px;
 	text-align: center;
+	margin: auto;
+	margin-top: 5%;
 	color: white;
-	font-size: 14px;
+	font-family: 'Verdana', sans-serif;
 }
-/** -----------------------HEADER--------------------------------- */
 
-/** -----------------------BODY--------------------------------- */
+.profile-img {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+}
 
-/** -----------------------BODY--------------------------------- */
+.profile h1 {
+	font-size: 40px;
+	letter-spacing: 4px;
+	font-weight: bold;
+}
+
+.profile h4 {
+	font-size: 20px;
+	letter-spacing: 3px;
+	font-weight: bold;
+}
+
+.box p {
+	text-align: justify;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.profile li {
+	display: inline-block;
+	margin: 6px;
+	list-style: none;
+}
+
+.profile li a {
+	transition: all ease-in-out 250ms;
+}
+
+.profile li a:hover {
+	color: #b9b9b9;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
