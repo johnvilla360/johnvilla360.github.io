@@ -1,10 +1,44 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>
-		</title>
+		<meta charset="utf-8">
+		<title>Sample 1</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+			$(window).on('scroll', function() {
+				if($(window).scrollTop()) {
+					$('nav').addClass('black');
+				}
+				else {
+					$('nav').removeClass('black');
+				}
+			});
+		</script>
 	</head>
 	<body>
-		<p>Test</p>
+		<div class="wrapper">
+			<nav>
+				<div class="brand">BRAND</div>
+				<ul>
+					<li><a id="home" href="#">Home</a></li>
+					<li><a id="about" href="#">About</a></li>
+					<li><a id="buy" href="#">Buy</a></li>
+					<li><a id="contact" href="#">Contact</a></li>
+					<li><a id="login" class="active" href="#">Log In</a></li>
+				</ul>
+			</nav>
+			<section class="sec1">
+				<div class="bg-text">
+					<p>Open your Horizon</p>
+					<button class="button">Join Now</button>
+				</div>	
+			</section>
+			<section class="content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet felis leo, eget semper ex imperdiet sed. Proin sit amet nulla sapien. Mauris ullamcorper nec purus in dapibus. Suspendisse potenti. Aenean blandit lacus non sapien euismod ultricies. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam et risus ornare, consectetur arcu sed, aliquet urna. Fusce nulla lorem, aliquam vitae commodo non, euismod vitae ipsum. Phasellus dictum blandit nisi, sed pellentesque lorem aliquet a. Praesent eu ligula vel diam dictum luctus et vitae quam. Integer interdum, libero eget posuere varius, purus nulla tempus mi, a gravida sapien mi at enim. Donec cursus egestas quam. Fusce nisi diam, auctor id tortor in, feugiat porta orci. Nam ultricies vestibulum enim vel pretium. Praesent bibendum euismod erat et dignissim.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet felis leo, eget semper ex imperdiet sed. Proin sit amet nulla sapien. Mauris ullamcorper nec purus in dapibus. Suspendisse potenti. Aenean blandit lacus non sapien euismod ultricies. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam et risus ornare, consectetur arcu sed, aliquet urna. Fusce nulla lorem, aliquam vitae commodo non, euismod vitae ipsum. Phasellus dictum blandit nisi, sed pellentesque lorem aliquet a. Praesent eu ligula vel diam dictum luctus et vitae quam. Integer interdum, libero eget posuere varius, purus nulla tempus mi, a gravida sapien mi at enim. Donec cursus egestas quam. Fusce nisi diam, auctor id tortor in, feugiat porta orci. Nam ultricies vestibulum enim vel pretium. Praesent bibendum euismod erat et dignissim.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet felis leo, eget semper ex imperdiet sed. Proin sit amet nulla sapien. Mauris ullamcorper nec purus in dapibus. Suspendisse potenti. Aenean blandit lacus non sapien euismod ultricies. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam et risus ornare, consectetur arcu sed, aliquet urna. Fusce nulla lorem, aliquam vitae commodo non, euismod vitae ipsum. Phasellus dictum blandit nisi, sed pellentesque lorem aliquet a. Praesent eu ligula vel diam dictum luctus et vitae quam. Integer interdum, libero eget posuere varius, purus nulla tempus mi, a gravida sapien mi at enim. Donec cursus egestas quam. Fusce nisi diam, auctor id tortor in, feugiat porta orci. Nam ultricies vestibulum enim vel pretium. Praesent bibendum euismod erat et dignissim.</p>
+			</section>
 	</body>
 </html>
