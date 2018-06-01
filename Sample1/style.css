@@ -14,6 +14,7 @@ nav {
 	padding: 10px 100px;
 	box-sizing: border-box;
 	transition: .3s;
+	z-index: 2;
 }
 
 nav.black {
@@ -34,7 +35,7 @@ nav.black .brand {
 	color: #fff;
 }
 
-nav ul { 
+nav ul {
 	list-style: none;
 	float: right;
 	margin: 0;
@@ -53,7 +54,6 @@ nav ul li a {
 	text-decoration: none;
 	text-transform: uppercase;
 	transition: .3s;
-	z-index: 1;
 }
 
 nav.black ul li a {
@@ -67,7 +67,7 @@ nav ul li a:focus {
 nav ul li a.active {
 	background: #E2472F;
 	color: #fff;
-	border-radius: 6px
+	border-radius: 6px;
 }
 
 section.sec1 {
@@ -174,16 +174,17 @@ nav ul li a.active:hover {
 	text-decoration: none;
 	font-size: 18px;
 	border: 2px solid black;
+	border-radius: 10px;
 	font-family: 'Roboto Condensed', sans-serif;
 	background: rgba(0,0,0,0);
 	transition: .2s;
 	cursor: pointer;
 	padding: 10px 20px 10px 20px;
-	z-index: -1;
+	z-index: 1;
 }
 
 .purchase:hover {
-	background-color: green;
+	background: green;
 	opacity: 0.9;
 }
 
