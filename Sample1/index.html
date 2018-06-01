@@ -5,16 +5,45 @@
 		<title>Sample 1</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-		<script type="text/javascript">
-			$(window).on('scroll', function() {
-				if($(window).scrollTop()) {
-					$('nav').addClass('black');
-				}
-				else {
-					$('nav').removeClass('black');
-				}
-			});
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$(window).on('scroll', function() {
+					if($(window).scrollTop()) {
+						$('nav').addClass('black');
+					}
+					else {
+						$('nav').removeClass('black');
+					}
+				});
+				$("#homenav").on("click", function(e) {
+					e.preventDefault();
+					$("html, body").animate({
+						scrollTop: 0
+					}, 850);
+				});	
+				$("#aboutnav").on("click", function(e) {
+					e.preventDefault();
+					var section = $(this).attr("href");
+					$("html, body").animate({
+						scrollTop: 575
+					}, 850);
+				});	
+				$("#buynav").on("click", function(e) {
+					e.preventDefault();
+					var section = $(this).attr("href");
+					$("html, body").animate({
+						scrollTop: 1840
+					}, 850);
+				});	
+				$("#contactnav").on("click", function(e) {
+					e.preventDefault();
+					var section = $(this).attr("href");
+					$("html, body").animate({
+						scrollTop: $(document).height()
+					}, 850);
+				});	
+			});	
 		</script>
 	</head>
 	<body>
@@ -22,23 +51,92 @@
 			<nav>
 				<div class="brand">BRAND</div>
 				<ul>
-					<li><a id="home" href="#">Home</a></li>
-					<li><a id="about" href="#">About</a></li>
-					<li><a id="buy" href="#">Buy</a></li>
-					<li><a id="contact" href="#">Contact</a></li>
-					<li><a id="login" class="active" href="#">Log In</a></li>
+					<li><a id="homenav" href="#">Home</a></li>
+					<li><a id="aboutnav" href="#about">About</a></li>
+					<li><a id="buynav" href="#buy">Buy</a></li>
+					<li><a id="contactnav" href="#contact">Contact</a></li>
+					<li><a id="loginnav" class="active" href="#">Log In</a></li>
 				</ul>
 			</nav>
 			<section class="sec1">
 				<div class="bg-text">
-					<p>Open your Horizons</p>
+					<p>Open your Horizon</p>
 					<button class="button">Join Now</button>
 				</div>	
 			</section>
-			<section class="content">
+			<h1 class="sectiontitle" id="about">About</h1>
+			<section class="content1">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet felis leo, eget semper ex imperdiet sed. Proin sit amet nulla sapien. Mauris ullamcorper nec purus in dapibus. Suspendisse potenti. Aenean blandit lacus non sapien euismod ultricies. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam et risus ornare, consectetur arcu sed, aliquet urna. Fusce nulla lorem, aliquam vitae commodo non, euismod vitae ipsum. Phasellus dictum blandit nisi, sed pellentesque lorem aliquet a. Praesent eu ligula vel diam dictum luctus et vitae quam. Integer interdum, libero eget posuere varius, purus nulla tempus mi, a gravida sapien mi at enim. Donec cursus egestas quam. Fusce nisi diam, auctor id tortor in, feugiat porta orci. Nam ultricies vestibulum enim vel pretium. Praesent bibendum euismod erat et dignissim.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet felis leo, eget semper ex imperdiet sed. Proin sit amet nulla sapien. Mauris ullamcorper nec purus in dapibus. Suspendisse potenti. Aenean blandit lacus non sapien euismod ultricies. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam et risus ornare, consectetur arcu sed, aliquet urna. Fusce nulla lorem, aliquam vitae commodo non, euismod vitae ipsum. Phasellus dictum blandit nisi, sed pellentesque lorem aliquet a. Praesent eu ligula vel diam dictum luctus et vitae quam. Integer interdum, libero eget posuere varius, purus nulla tempus mi, a gravida sapien mi at enim. Donec cursus egestas quam. Fusce nisi diam, auctor id tortor in, feugiat porta orci. Nam ultricies vestibulum enim vel pretium. Praesent bibendum euismod erat et dignissim.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet felis leo, eget semper ex imperdiet sed. Proin sit amet nulla sapien. Mauris ullamcorper nec purus in dapibus. Suspendisse potenti. Aenean blandit lacus non sapien euismod ultricies. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam et risus ornare, consectetur arcu sed, aliquet urna. Fusce nulla lorem, aliquam vitae commodo non, euismod vitae ipsum. Phasellus dictum blandit nisi, sed pellentesque lorem aliquet a. Praesent eu ligula vel diam dictum luctus et vitae quam. Integer interdum, libero eget posuere varius, purus nulla tempus mi, a gravida sapien mi at enim. Donec cursus egestas quam. Fusce nisi diam, auctor id tortor in, feugiat porta orci. Nam ultricies vestibulum enim vel pretium. Praesent bibendum euismod erat et dignissim.</p>
 			</section>
+			<br>
+			<hr style="margin-left:100px; margin-right:100px;">
+			<h1 class="sectiontitle" id="buy">Buy</h1>
+			<secton class="content2">
+				<div class="row">
+					<div class="row_cell1">
+						<p>Package 1</p>
+						<ul>
+							<li><img id="checkmark" src="img/checkmark.png"><p> Lorem ipsum dolor sit amet</p></li>
+							<li><img id="xmark" src="img/xmark.png"><p> Fusce imperdiet felis leo</p></li>
+							<li><img id="xmark" src="img/xmark.png"><p> Phasellus dictum</p></li>
+						</ul>
+						<button class="purchase">$4.99</button>
+					</div>
+					<div class="row_cell2">
+						<p>Package 2</p>
+						<ul>
+							<li><img id="checkmark" src="img/checkmark.png"><p> Lorem ipsum dolor sit amet</p></li>
+							<li><img id="checkmark" src="img/checkmark.png"><p> Fusce imperdiet felis leo</p></li>
+							<li><img id="xmark" src="img/xmark.png"><p> Phasellus dictum</p></li>
+						</ul>
+						<button class="purchase">$9.99</button>
+					</div>
+					<div class="row_cell3">
+						<p>Package 3</p>
+						<ul>
+							<li><img id="checkmark" src="img/checkmark.png"><p> Lorem ipsum dolor sit amet</p></li>
+							<li><img id="checkmark" src="img/checkmark.png"><p> Fusce imperdiet felis leo</p></li>
+							<li><img id="checkmark" src="img/checkmark.png"><p> Phasellus dictum</p></li>
+						</ul>
+						<button class="purchase">$13.99 Special</button>
+					</div>
+				</div>
+			</section>
+			<br><br>
+			<hr style="margin-left:100px; margin-right:100px;">
+			<h1 class="sectiontitle" id="contact">Contact</h1>
+			<section class="content3">
+				<div class="contact">
+					<div class="contact-info">
+						<strong>John Villa Services</strong></br>
+						12345 No Where Ln.</br>
+						Suite 201C</br>
+						Brooklyn, NY 11224</br>
+						United States</br></br>
+						Email: johnvilla360@gmail.com</br>
+						Phone: (123)-456-7890</br>
+					</div>
+					<div class="message">
+						<form action="">
+							<labal for"name">First and Last Name: </label><br>
+							<input type="text" id="fullname" placeholder="Your Name">
+							<br>
+							<labal for"email">Email: </label><br>
+							<input type="text" id="email" placeholder="Your Email">
+							<br>
+							<labal for"msg">Your Message:</label>
+							<br>
+							<textarea placeholder="Enter your message.."></textarea>
+							<br>
+							<input type="submit" value="Send">
+						</form>
+					</div>
+				</div>
+			</section>
+			<footer>
+				<p>&copy; 2018 John Villa. All rights reserved. </p>
+			</footer>
 	</body>
 </html>
