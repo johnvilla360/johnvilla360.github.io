@@ -1,0 +1,91 @@
+html {
+	background-color: #E3DEDB;
+}
+
+.wrapper {
+	background-color: white;
+	padding: 40px;
+	width: 90%;
+	margin: auto;
+}
+
+.title {
+	width: 90%;
+	background-color: #81E623;
+	padding: 10px 0;
+	margin: auto;
+	border-radius: 10px;
+}
+
+.title h1 {
+	color: white;
+	font-family: 'Bowlby One SC', cursive;
+	text-align: center;
+	font-size: 64px;
+	letter-spacing: 4px;
+}
+
+.title h4 {
+	color: white;
+	font-family: 'Bowlby One SC', cursive;
+	text-align: center;
+	font-size: 18px;
+	letter-spacing: 2px;
+	margin: -50px 0px 40px 0px;
+}
+
+.topnav ul {
+	width: 90%;
+	background-color: #5A9C18;
+	list-style-type: none;
+	text-align: center;
+	margin: auto;
+	padding: 10px 0px 10px 0px;
+	border-radius: 10px;
+}
+
+
+.topnav li {
+	font-family: 'Bowlby One SC', cursive;
+	color: white;
+	display: inline;
+	padding: 0 10px 0 10px;
+}
+
+.topnav li a {
+	text-decoration: none;
+	color: white;
+	transition: .2s;
+	cursor: pointer;
+	letter-spacing: 1px;
+}
+
+.topnav li a:hover {
+	color: black;
+}
+
+.pics {
+	background-color: white;
+	margin: auto;
+	padding: 0px 40px 20px 40px;
+	width: 90%;
+	text-align: center;
+}
+
+.welcomepics {
+	border: 1px solid black;
+	height: 350px;
+	width: 350px;
+	display: inline-block;
+	margin: 0px 10px 0px 10px;
+}
+
+img {
+	height: 350px;
+	width: 350px;
+	object-fit: cover;
+}
+
+.bullet {
+	color: white;
+}
