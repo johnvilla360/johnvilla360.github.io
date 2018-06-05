@@ -5,14 +5,44 @@
 		<title>Sample 2</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 		<script>
 			$(document).ready(function() {
-				$("#welcome").on("click", function(e) {
+				$("#about").on("click", function(e) {
+					e.preventDefault();
+					$("html, body").animate({
+						scrollTop: 400
+					}, 1500);
+				});
+				$( function() {
+    				$( "#datepicker" ).datepicker();
+ 				 });
+			$("#res").on("click", function(e) {
+					e.preventDefault();
+					$("html, body").animate({
+						scrollTop: $(document).height()
+					}, 1500);
+				});
+			$("#hours").on("click", function(e) {
+					e.preventDefault();
+					$("html, body").animate({
+						scrollTop: $(document).height()
+					}, 1500);
+				});
+			$("#contact").on("click", function(e) {
+					e.preventDefault();
+					$("html, body").animate({
+						scrollTop: $(document).height()
+					}, 1500);
+				});
+			$("#backtotop").on("click", function(e) {
 					e.preventDefault();
 					$("html, body").animate({
 						scrollTop: 0
-					}, 500);
+					}, 1500);
 				});
 			});
 		</script>		
@@ -21,17 +51,84 @@
 		<div class="topnav">
 			<div id="logo">LOGO</div>
 			<ul>
-				<li><a>About</a></li>
-				<li><a>Menu</a></li>
-				<li><a>Reservations</a></li>
-				<li><a>Hours & Location</a></li>
-				<li><a>Contact Us</a></li>
+				<li><a id="about" href="#about">About</a></li>
+				<li><a href="img/menu.png" target="_blank">Menu</a></li>
+				<li><a id="res" href="#res">Reservations</a></li>
+				<li><a id="hours" href="#hours">Hours</a></li>
+				<li><a id="contact" href="#contact">Contact Us</a></li>
 			</ul>
 		</div>
-		<section>
+		<section class="section1">
 			<div class="pic1"></div>
 			<h1>Fresh Eats</h1>
-			<button class="menubutton">View Menu</button>
+			<a href="img/menu.png" target="_blank" class="menubutton">View Menu</a>
+		</section>
+		<section class="section2">
+			<div id="about"class="quote1">
+				<i>"Locally farmed fruits and vegatables from the area to provide </i><b> the best quality</b><i> foods there is. We offer a variety of </i><b> healthy</b><i> choices to give you the </i><b>energy and nutrition</b><i> you need."</i>
+			</div>
+			<div class="pic2">
+				<div class="whitebox">
+					<div class="etc">
+						<div class="column1">
+							<u> Reservations </u>
+							<form action="">
+								Booking Type:
+								<select>
+									<option value="dinner">Dinner</option>
+									<option value="lunch">Lunch</option>
+									<option value="breakfast">Breakfast</option>
+								</select><br>
+								Number of People:
+								<select>
+									<option value="two">2</option>
+									<option value="three">3</option>
+									<option value="four">4</option>
+									<option value="five">5</option>
+									<option value="six">6</option>
+									<option value="seven">7</option>
+									<option value="eight">8</option>
+								</select><br>
+								Date:
+								<input type="text" id="datepicker"><br>
+								Time:
+								<select>
+									<option value="time">7:00PM</option>
+									<option value="time2">2:00PM</option>
+									<option value="time3">9:00AM</option>
+								</select><br>
+								<input id="enquire" type="submit" value="Enquire Now">
+							</form>
+						</div>
+						<div class="column2">
+							<u> Hours </u>
+							<p>Monday-Friday: 9:00AM-11:00PM</p>
+							<p>Saturday: 11:00AM-11:00PM</p>
+							<p>Sunday: 11:00AM-9:00PM</p>
+						</div>
+						<div class="column3">
+							<u> Contact Us </u>
+							<p> 
+								1234 Random Street<br>
+								New York, NY 56789<br>
+								<br>
+								<b>Phone:</b> (123)-456-7890<br>
+								<b>Email:</b> RandomEmail123@gmail.com
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section3">
+			<div class="bottomnav">
+				<a id="backtotop" href="#backtotop">▲ Back to Top ▲</a>
+			</div>
+			<div class="footer">
+				<footer>
+					<p>&copy; 2018 John Villa. All rights reserved. </p>
+				</footer>
+			</div>
 		</section>
 	</body>
 </html>

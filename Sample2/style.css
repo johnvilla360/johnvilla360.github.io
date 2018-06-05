@@ -28,6 +28,7 @@ html {
 .topnav ul li a {
 	color: #288A0B;
 	cursor: pointer;
+	text-decoration: none;
 	transition: 0.3s;
 }
 
@@ -43,33 +44,35 @@ html {
 }
 
 .pic1 {
-	background-image: url('img/rainbow2.jpg');
+	margin: 70px 0;
+	background: url('img/rainbow2.jpg');
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 675px;
 	box-sizing: border-box;
-	background-size: cover;
-	position: fixed;
-	filter: blur(7px);
+	background-size: 100% 675px;
+	background-repeat: no-repeat;
+	position: absolute;
+	filter: blur(6px);
 	z-index: -1;
 }
 
-section {
+.section1 {
 	text-align: center;
 }
 
-section h1 {
+.section1 h1 {
 	color: white;
 	font-family: 'Oswald', sans-serif;
 	text-align: center;
 	font-size: 120px;
-	margin: 200px 0 0 0;
+	margin: 220px 0 0 0;
 }
 
 .menubutton {
-	color: white;
 	font-family: 'Oswald',sans-serif;
+	color: white;
 	background-color: #288A0B;
 	font-size: 18px;
 	padding: 10px 30px 10px 30px;
@@ -84,4 +87,161 @@ section h1 {
 .menubutton:hover {
 	background-color: white;
 	color: #288A0B;
+}
+
+.section2 {
+	background-color: #288A0B;
+	width: 100%;
+	height: 250px;
+	margin: 250px 0;
+	position: absolute;
+	left: 0;
+}
+
+.quote1 {
+	color: white;
+	text-align: center;
+	padding-top: 60px;
+	font-size: 36px;
+	margin: 0px 200px 0px 200px;
+}
+
+.quote1 b {
+	color: yellow;
+}
+
+.pic2 {
+	background: url('img/fruits2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 600px;
+	width: 100%;
+	margin: 60px 0px 0px 0px;
+}
+
+.whitebox {
+	width: 90%;
+	height: 500px;
+	background: white;
+	position: absolute;
+	margin: 60px 0px 0px 70px; 
+}
+
+.etc {
+	text-align: center;
+	padding-top: 50px;
+}
+
+.column1 {
+	width: 30%;
+	height: 350px;
+	display: inline-block;
+	margin-right: 10px;
+	padding-top: 10px;
+	font-family: 'Oswald', sans-serif;
+	color: #288A0B;
+	font-size: 24px; 
+	letter-spacing: 1px;
+	line-height: 50px;
+}
+
+.column1 p, .column2 p, .column3 p {
+	font-size: 16px;
+}
+
+.column2 {
+	width: 30%;
+	height: 350px;
+	display: inline-block;
+	margin-right: 10px;
+	padding-top: 10px;
+	font-family: 'Oswald', sans-serif;
+	color: #288A0B;
+	font-size: 24px; 
+	letter-spacing: 1px;
+	line-height: 50px;
+	position: relative;
+	bottom: 52px;
+}
+
+.column3 {
+	width: 30%;
+	height: 350px;
+	display: inline-block;
+	margin-right: 10px;
+	padding-top: 10px;
+	font-family: 'Oswald', sans-serif;
+	color: #288A0B;
+	font-size: 24px; 
+	letter-spacing: 1px;
+	line-height: 50px;
+	position: relative;
+	top: 16px;
+}
+
+form {
+	font-size: 16px;
+}
+
+select, input {
+	border: 2px solid #0C2903;
+	color: #0C2903;
+	font-family: 'Oswald', sans-serif;
+	font-size: 16px;
+}
+
+option {
+	color: #0C2903;
+}
+
+#enquire {
+	background-color: #288A0B;
+	color: white;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	padding: 10px 20px 10px 20px;
+	transition: 0.1s;
+}
+
+#enquire:hover {
+	background-color: white;
+	color: #288A0B;
+	border: 1px solid #288A0B;
+}
+
+.bottomnav {
+	text-align: center;
+	width: 100%;
+	height: 40px;
+	background: white;
+	position: absolute;
+	left: 0;
+	padding-top: 15px;
+	margin: 1090px 0px 0px 0px;
+	background-color: #288A0B;
+}
+
+.bottomnav a {
+	text-decoration: none;
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	font-size: 18px;
+}
+
+.footer {
+	width: 100%;
+	height: 50px;
+	background: white;
+	position: absolute;
+	left: 0;
+	padding-top: 15px;
+	margin: 1140px 0px 0px 0px;
+	background-color: white;
+}
+
+.footer p {
+	color: #288A0B;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
 }
