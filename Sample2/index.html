@@ -4,35 +4,34 @@
 		<meta charset="utf-8">
 		<title>Sample 2</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">		
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("#welcome").on("click", function(e) {
+					e.preventDefault();
+					$("html, body").animate({
+						scrollTop: 0
+					}, 500);
+				});
+			});
+		</script>		
 	</head>
 	<body>
-		<div class="wrapper">
-			<div class="title">
-				<h1>~ Good Eats ~</h1>
-				<h4> Simple, Delicious, Fun</h4> 
-			</div>
-			<br>
-			<div class="topnav">
-				<ul>
-					<li><a>Welcome</a></li> <b class ="bullet">&#8226;</b>
-					<li><a>About Us</a></li> <b class ="bullet">&#8226;</b>
-					<li><a href="img/menu.png" target="_blank">Menu</a></li> <b class ="bullet">&#8226;</b>
-					<li><a>Reservations</a></li> <b class ="bullet">&#8226;</b>
-					<li><a>Locations</a></li> <b class ="bullet">&#8226;</b>
-					<li><a>Contact</a></li>
-			</div>
+		<div class="topnav">
+			<div id="logo">LOGO</div>
+			<ul>
+				<li><a>About</a></li>
+				<li><a>Menu</a></li>
+				<li><a>Reservations</a></li>
+				<li><a>Hours & Location</a></li>
+				<li><a>Contact Us</a></li>
+			</ul>
 		</div>
-			<div class="pics">
-				<div class="welcomepics">
-					<img src="https://raw.githubusercontent.com/johnvilla360/johnvilla360.github.io/master/Sample2/img/1.JPG">
-				</div>
-				<div class="welcomepics">
-					<img src="https://raw.githubusercontent.com/johnvilla360/johnvilla360.github.io/master/Sample2/img/2.JPG">
-				</div>
-				<div class="welcomepics">
-					<img src="https://raw.githubusercontent.com/johnvilla360/johnvilla360.github.io/master/Sample2/img/3.JPG">
-				</div>
-			
+		<section>
+			<div class="pic1"></div>
+			<h1>Fresh Eats</h1>
+			<button class="menubutton">View Menu</button>
+		</section>
 	</body>
 </html>

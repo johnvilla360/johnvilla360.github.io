@@ -2,90 +2,86 @@ html {
 	background-color: #E3DEDB;
 }
 
-.wrapper {
+.topnav {
+	position: fixed;
 	background-color: white;
-	padding: 40px;
-	width: 90%;
-	margin: auto;
-}
-
-.title {
-	width: 90%;
-	background-color: #81E623;
-	padding: 10px 0;
-	margin: auto;
-	border-radius: 10px;
-}
-
-.title h1 {
-	color: white;
-	font-family: 'Bowlby One SC', cursive;
-	text-align: center;
-	font-size: 64px;
-	letter-spacing: 4px;
-}
-
-.title h4 {
-	color: white;
-	font-family: 'Bowlby One SC', cursive;
-	text-align: center;
-	font-size: 18px;
-	letter-spacing: 2px;
-	margin: -50px 0px 40px 0px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px 100px;
+	box-sizing: border-box;
+	z-index: 2;
 }
 
 .topnav ul {
-	width: 90%;
-	background-color: #5A9C18;
+	font-family: 'Oswald', sans-serif;
 	list-style-type: none;
 	text-align: center;
-	margin: auto;
-	padding: 10px 0px 10px 0px;
-	border-radius: 10px;
+	letter-spacing: 2px;
 }
 
-
-.topnav li {
-	font-family: 'Bowlby One SC', cursive;
-	color: white;
+.topnav ul li {
 	display: inline;
-	padding: 0 10px 0 10px;
+	margin: 30px;
 }
 
-.topnav li a {
-	text-decoration: none;
-	color: white;
-	transition: .2s;
+.topnav ul li a {
+	color: #288A0B;
 	cursor: pointer;
-	letter-spacing: 1px;
+	transition: 0.3s;
 }
 
-.topnav li a:hover {
-	color: black;
+.topnav ul li a:hover {
+	color: #0C2903;
 }
 
-.pics {
-	background-color: white;
-	margin: auto;
-	padding: 0px 40px 20px 40px;
-	width: 90%;
+#logo {
+	float: left;
+	font-family: 'Oswald', sans-serif;
+	font-size: 36px;
+	color: #288A0B;
+}
+
+.pic1 {
+	background-image: url('img/rainbow2.jpg');
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 675px;
+	box-sizing: border-box;
+	background-size: cover;
+	position: fixed;
+	filter: blur(7px);
+	z-index: -1;
+}
+
+section {
 	text-align: center;
 }
 
-.welcomepics {
-	border: 1px solid black;
-	height: 350px;
-	width: 350px;
-	display: inline-block;
-	margin: 0px 10px 0px 10px;
-}
-
-img {
-	height: 350px;
-	width: 350px;
-	object-fit: cover;
-}
-
-.bullet {
+section h1 {
 	color: white;
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	font-size: 120px;
+	margin: 200px 0 0 0;
+}
+
+.menubutton {
+	color: white;
+	font-family: 'Oswald',sans-serif;
+	background-color: #288A0B;
+	font-size: 18px;
+	padding: 10px 30px 10px 30px;
+	text-decoration: none;
+	border: none;
+	border-radius: 7px;
+	text-transform: uppercase;
+	transition: .2s;
+	cursor: pointer;
+}
+
+.menubutton:hover {
+	background-color: white;
+	color: #288A0B;
 }
