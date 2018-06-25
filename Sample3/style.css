@@ -1,0 +1,205 @@
+/* HTML,BODY Edits */
+html, body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	line-height: normal;
+	overflow-x: hidden; 
+	overflow-y: hidden;
+}
+
+/* Top Blue Bar */
+#bar1 {
+	height: 33%;
+	background: linear-gradient(to left, #003399 0%, #0099cc 100%);
+	width: 100%;
+	visibility: hidden;
+	position: relative;
+	animation: 0.5s ease-out anim1 forwards;
+}
+
+/* Middle White/Gray Bar */
+#bar2 {
+	height: 33%;
+	background: linear-gradient(to right, #ffffff 0%, #c4c2c1 100%);
+	width: 100%;
+	visibility: hidden;
+	position: relative;
+	animation: 1s ease-out 1s anim2 forwards;
+}
+
+/* Bottom Blue Bar */
+#bar3 {
+	height: 34%;
+	background: linear-gradient(to right, #003399 0%, #0099cc 100%);
+	width: 100%;
+	visibility: hidden;
+	position: relative;
+	animation: 1s ease-out 2s anim3 forwards;
+}
+
+/* Text on Top Blue Bar */
+.whitetext1 {
+	color: white;
+	text-align: center;
+	font-size: 170px;
+	font-family: 'Signika', sans-serif;
+	visibility: hidden;
+	animation: 1s ease-out 1s texteffect1 forwards;
+}
+
+/* Text on Bottom Blue Bar */
+.whitetext2 {
+	color: white;
+	text-align: center;
+	font-size: 190px;
+	font-family: 'Poiret One', cursive;
+	visibility: hidden;
+	animation: 1s ease-out 3s texteffect2 forwards;
+}
+
+/* Text on Middle White/Gray Bar */
+.blacktext {
+	color: black;
+	text-align: center;
+	font-size: 170px;
+	font-family: 'Dancing Script', cursive;
+	visibility: hidden;
+	animation: 1s ease-out 2s texteffect3 forwards;
+}
+
+/* Join Now Button */
+.joinnow {
+	z-index: 2;
+	position: absolute;
+	margin-left: 45%;
+	bottom: 425px;
+	color: #1d3882;
+	border: 2px solid #1d3882;
+	border-radius: 15px;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	background: rgba(255,255,255,1);
+	transition: .5s;
+	cursor: pointer;
+	font-family: 'Ropa Sans', sans-serif;
+	font-size: 24px;
+	visibility: hidden;
+	outline: none;
+	animation: 1s ease-out 4.5s buttoneffect forwards;
+}
+
+/* Hover Effect On Join Now Button */
+.joinnow:hover {
+	background-color: #d4120f;
+	opacity: 0.8;
+	color: white;
+	border: white;
+}
+
+/*Top Nav Bar */
+.topnavbar {
+	display: none;
+	margin-bottom: 100px;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background-color: #0099cc;
+}
+
+/* Logo on Top Nav */
+.logo {
+	padding: 30px 20px 0px 30px;
+	height: 80px;
+	float: left;
+	font-size: 24px;
+}
+
+nav ul {
+	list-style: none;
+	float: right;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav ul li {
+	list-style: none;
+}
+
+nav ul li a {
+	line-height: 80px;
+	color: #151515;
+	padding: 12px 40px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+/* Home Page Image */
+.homebg {
+	width: 100%;
+	height: 100vh;
+	background-image: url(img/codingpic.jpeg);
+	background-size: cover;
+	background-position: center;
+	display: none;
+}
+
+.sectiontitle {
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 100px;
+}
+
+.content1 {
+	margin-top: 50px;
+}
+
+.content1 p {
+	width: 900px;
+	margin: 30px auto;
+	text-align: justify;
+	font-size: 20px;
+	line-height: 200%;
+}
+
+/* Keyframes for animations */
+@keyframes anim1 {
+	0% {transform: translateX(100%); visibility: visible;}
+	100% {transform: translateX(0%); visibility: visible;}
+}
+
+@keyframes anim2 {
+	0% {transform: translateX(-100%); visibility: visible;}
+	100% {transform: translateX(0%); visibility: visible;}
+}
+
+@keyframes anim3 {
+	0% {transform: translateX(100%); visibility: visible;}
+	100% {transform: translateX(0%); visibility: visible;}
+}
+
+@keyframes buttoneffect {
+	0% {transform: translateY(20%); visibility: visible; opacity: 0.1;}
+	100% {transform: translateY(0%); visibility: visible; opacity: 1;}
+}
+
+@keyframes texteffect1 {
+	0% {transform: translateY(-10%); visibility: visible; opacity: 0.1;}
+	100% {transform: translateY(0%); visibility: visible; opacity: 1;}
+}
+
+@keyframes texteffect2 {
+	0% {transform: translateX(10%); visibility: visible; opacity: 0.1;}
+	100% {transform: translateX(0%); visibility: visible; opacity: 1;}
+}
+
+@keyframes texteffect3 {
+	0% {transform: translateX(-10%); visibility: visible; opacity: 0.1;}
+	100% {transform: translateX(0%); visibility: visible; opacity: 1;}
+}
