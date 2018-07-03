@@ -1,14 +1,27 @@
 $(document).ready(function() {
-	
-	alert('This is page is still under progress...');
+	// Animation after continue
+	$(".continue").click(function() {
 
-	$(".joinnow").click(function() {
-		$(".joinnow").fadeOut(), 50;
-		$("#bar1").delay(400).animate({bottom: '400px'}).hide(2500);
-		$("#bar2").delay(350).fadeOut(1000);
-		$("#bar3").delay(750).animate({top: '700px'}).hide(2000);
+		setTimeout(resetCSS, 1000);
+
+		$(".continue").hide();
+		$("#bar1").animate({left:"100%"});
+		$("#bar2").animate({right:"100%"});
+		$("#bar3").animate({left:"100%"});
+		$("#bar1").delay(2000).fadeOut();
+		$("#bar2").delay(2000).fadeOut();
+		$("#bar3").delay(2000).fadeOut();
+		$("nav").delay(1000).fadeIn(1000);
 		$(".topnavbar").delay(1000).fadeIn(1000);
-		$(".homebg").delay(100).show(100);
-		$('html, body').css('overflowY', 'auto');
+		$(".homebg").delay(1000).fadeIn(500);
+		$(".spacebg").delay(1000).fadeIn(500);
+		$("footer").delay(1000).fadeIn(500);
+		$('html, body').css('overflowY', 'initial');
+		$('html, body').css('overflowX', 'initial');
+
+		function resetCSS () {
+		$('.content1').css('display', 'block');
+		$('.content3').css('display', 'flex');
+		}
 	});
 });

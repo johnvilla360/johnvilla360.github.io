@@ -7,16 +7,38 @@
 		<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Poiret+One|Ropa+Sans|Signika" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script type="text/javascript" src="script.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+		<script>
+			$(document).ready(function() {
+				$("#homenav").on("click", function(e) {
+					e.preventDefault();
+					$("html, body").animate({
+						scrollTop: 0
+					}, 1500);
+				});
+			$("#aboutnav").on("click", function(e) {
+					e.preventDefault();
+					$("html, body").animate({
+						scrollTop: 800
+					}, 1500);
+				});
+			$("#contactnav").on("click", function(e) {
+					e.preventDefault();
+					$("html, body").animate({
+						scrollTop: 2050
+					}, 1500);
+				});
+			});
+		</script>		
 	</head>
 	<body>
 		<div id="bar1">
-			<div class="whitetext1">Responsive</div>
+			<div class="whitetext1">Creative</div>
 		</div>
-		<button class="joinnow" onclick="javascript: joinclick();">JOIN NOW</button>
+		<button class="continue">CONTINUE</button>
 		<div id="bar2">
 			<div class="blacktext">Stylish</div>
 		</div>
@@ -26,20 +48,96 @@
 		<div class="topnavbar">
 			<nav>
 				<div class="logo">LOGO</div>
+				<div id="line"></div>
 				<ul>
-					<li><a id="homenav" href="#">Home</a></li>
+					<li><a id="homenav" href="#home">Home</a></li>
 					<li><a id="aboutnav" href="#about">About</a></li>
-					<li><a id="buynav" href="#buy">Buy</a></li>
 					<li><a id="contactnav" href="#contact">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
-		<section class="1">
-		<div class="homebg"></div>
+		<section class="home">
+		<div class="homebg">
+			<div class="homebg-overlay">
+				<div class="hometext">
+					<h1>Hi, I'm <u>John</u>. </h1>
+					<h4>"How can I help you?"</h4>
+				</div>
+			</div>
+		</div>
 		</section>
-			<h1 class="sectiontitle" id="about">About</h1>
-			<section class="content1">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet felis leo, eget semper ex imperdiet sed. Proin sit amet nulla sapien. Mauris ullamcorper nec purus in dapibus. Suspendisse potenti. Aenean blandit lacus non sapien euismod ultricies. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam et risus ornare, consectetur arcu sed, aliquet urna. Fusce nulla lorem, aliquam vitae commodo non, euismod vitae ipsum. Phasellus dictum blandit nisi, sed pellentesque lorem aliquet a. Praesent eu ligula vel diam dictum luctus et vitae quam. Integer interdum, libero eget posuere varius, purus nulla tempus mi, a gravida sapien mi at enim. Donec cursus egestas quam. Fusce nisi diam, auctor id tortor in, feugiat porta orci. Nam ultricies vestibulum enim vel pretium. Praesent bibendum euismod erat et dignissim.</p>
-			</section>
+		
+		<section class="content1">
+			<div class="row1">
+				<div class="column">
+					<span class="glyphicon glyphicon-flash" id="icon1">
+					<h1>Quick.</h1>
+					<h4>Speedy worker to make sure projects hit deadlines.</h4>
+				</div>
+				<div class="column">
+					<span class="glyphicon glyphicon-edit" id="icon2">
+					<h1>Clean.</h1>
+					<h4>Organized efficient code easy to understand.</h4>
+				</div>
+				<div class="column">
+					<span class="glyphicon glyphicon-education" id="icon3">
+					<h1>Educated.</h1>
+					<h4>College Degree B.S. in Computer Science.</h4>
+				</div>
+			</div>
+		</section>
+		<section class="content2">
+		<div class="spacebg">
+			<div class="spacebg-overlay">
+				<div class="hometext">
+					<h1>Magic before your eyes.</h1>
+					<h4>"As close as you can get that is."</h4>
+				</div>
+			</div>
+		</div>
+		</section>
+		<section class="content3">
+			<div class="myinfo">
+				<h4>My Info:</h4>
+				<p>John Villa</p>
+				<p>Phone: (646)-331-5425</p>
+				<p>Email: johnvilla360@gmail.com</p>
+			</div>
+			<div class="contact">
+				<h4>Contact Me</h4>
+				<form id="contactForm">
+					<p style="font-size: 12px;">
+						Fields with * symbol are required.
+					</p>
+					<p>
+						<label>Name*:</label>
+						<input type="text" name="name" id="name" align="center" placeholder="Your Name" required>
+					</p>
+					<p>
+						<label>Company:</label>
+						<input type="text" name="company" id="company" align="center" placeholder="Your Company
+						">
+					</p>
+					<p>
+						<label>Email Address*:</label>
+						<input type="text" name="email" id="email" align="center" placeholder="Your Email" required>
+					</p>
+					<p>
+						<label>Number:</label>
+						<input type="text" name="number" id="number" align="center" placeholder="Your Number">
+					</p>
+					<p>
+						<label>Message*:</label><br>
+						<textarea name="message" id="message" align="center" rows="5" placeholder="Write a message." required></textarea>
+					</p>
+					<div class="msgAlert">Your message has been sent</div>
+					<p class="full">
+						<button class="submit" type="submit">Submit</button>
+					</p>
+				</form>
+		</section>
+		<footer>
+			<p>&copy; 2018 John Villa. All rights reserved. </p>
+		</footer>
 	</body>
 </html>
