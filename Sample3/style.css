@@ -6,6 +6,7 @@ html, body {
 	line-height: normal;
 	overflow-x: hidden; 
 	overflow-y: hidden;
+
 }
 
 /* Top Blue Bar */
@@ -108,52 +109,42 @@ u {
 /*Top Nav Bar */
 .topnavbar {
 	display: none;
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 }
 
 nav {
-	display: none;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 150px;
-	background-color: #0099CC;
+	height: 75px;
+	background-image: url(img/nav.png);
 }
 
 /* Logo on Top Nav */
 .logo {
-	padding: 20px 20px 0px 30px;
-	height: 80px;
+	position: relative;
+	top: 10px;
+	left: 10px;
 	float: left;
-	font-size: 24px;
-}
-
-#line {
-	position: absolute;
-	top: 70px;
-	left: 40px;
-	width: 95%;
-	height: 1px;
-	background-color: white;
 }
 
 nav ul {
 	position: absolute;
 	list-style: none;
-	margin-top: 70px;
-	margin-left: 40%;
+	margin-left: 38%;
 	padding: 0;
 	display: flex;
 }
 
 nav ul li {
+	text-align: center;
 	list-style: none;
 }
 
 nav ul li a {
 	line-height: 80px;
-	color: #151515;
+	color: white;
 	padding: 12px 40px;
 	border-radius: 20px;
 	text-decoration: none;
@@ -165,13 +156,13 @@ nav ul li a:hover {
 	text-decoration: none;
 	cursor: pointer;
 	background-color: white;
-	color: #0099CC;
+	color: #0E0C9C;
 	border-radius: 20px;
 }
 
 nav ul li a:active, a:visited, a:focus {
 	text-decoration: none;
-	color: #151515;
+	color: white;
 }
 
 /* Home Page Image */
@@ -250,10 +241,12 @@ span {
 span h1 {
 	padding-top: 30px;
 	color: #1E328C;
+	font-family: 'Oswald', sans-serif;
 }
 
 span h4 {
 	color: #000;
+	font-family: 'Oswald', sans-serif;
 }
 
 #icon1 {
@@ -295,7 +288,6 @@ span h4 {
 	color: #41339e;
 	text-align: center;
 	font-size: 36px;
-	padding-bottom: 24px;
 }
 
 .myinfo {
@@ -307,6 +299,14 @@ span h4 {
 	box-shadow: 2px 2px 5px grey;
 	border: 2px solid #0099CC;
 	border-radius: 15px;
+}
+
+hr {
+	color: #1E328C;
+	background-color: #1E328C;
+	height: 3px;
+	width: 90%;
+
 }
 
 .myinfo p {
@@ -341,7 +341,7 @@ label {
 	text-align: left;
 }
 
-input[type=text], textarea {
+input[type=text], input[type=email], textarea {
 	width: 40%;
 	padding: 12px;
 	border-radius: 5px;
@@ -350,18 +350,6 @@ input[type=text], textarea {
 textarea {
 	width: 70%;
 	resize: none;
-}
-
-.msgAlert {
-	margin: 0 auto;
-	margin-bottom: 10px;
-	position: relative;
-	display: none;
-	padding: 10px;
-	background-color: #60f27b;
-	color: white;
-	width: 80%;
-	text-align: center;
 }
 
 .submit {

@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<!-- <meta http-equiv="refresh" content="10" /> -->
-		<title>Sample 3</title>
-		<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Poiret+One|Ropa+Sans|Signika" rel="stylesheet">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script type="text/javascript" src="script.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Villa Webdesigns</title>
+    
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/5.3.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/5.3.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/5.3.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/5.3.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/5.3.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Poiret+One|Ropa+Sans|Signika|Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ 	<script>
 			$(document).ready(function() {
 				$("#homenav").on("click", function(e) {
 					e.preventDefault();
@@ -32,8 +44,11 @@
 					}, 1500);
 				});
 			});
-		</script>		
+	</script>		
 	</head>
+
+	<link rel = "shortcut icon" href="img/Logo.png">
+
 	<body>
 		<div id="bar1">
 			<div class="whitetext1">Creative</div>
@@ -47,8 +62,9 @@
 		</div>
 		<div class="topnavbar">
 			<nav>
-				<div class="logo">LOGO</div>
-				<div id="line"></div>
+				<div class="logo">
+					<img src="img/Logo.png" width="50" height="50">
+				</div>
 				<ul>
 					<li><a id="homenav" href="#home">Home</a></li>
 					<li><a id="aboutnav" href="#about">About</a></li>
@@ -99,41 +115,43 @@
 		<section class="content3">
 			<div class="myinfo">
 				<h4>My Info:</h4>
+				<hr>
 				<p>John Villa</p>
 				<p>Phone: (646)-331-5425</p>
 				<p>Email: johnvilla360@gmail.com</p>
 			</div>
 			<div class="contact">
 				<h4>Contact Me</h4>
-				<form id="contactForm">
+				<hr>
+				<form method="POST" action="https://formspree.io/johnvilla360@gmail.com">
 					<p style="font-size: 12px;">
 						Fields with * symbol are required.
 					</p>
 					<p>
 						<label>Name*:</label>
-						<input type="text" name="name" id="name" align="center" placeholder="Your Name" required>
+						<input type="text" name="name" align="center" placeholder="Your Name" required>
 					</p>
 					<p>
 						<label>Company:</label>
-						<input type="text" name="company" id="company" align="center" placeholder="Your Company
+						<input type="text" name="company" align="center" placeholder="Your Company
 						">
 					</p>
 					<p>
 						<label>Email Address*:</label>
-						<input type="text" name="email" id="email" align="center" placeholder="Your Email" required>
+						<input type="email" name="email" align="center" placeholder="Your Email" required>
 					</p>
 					<p>
 						<label>Number:</label>
-						<input type="text" name="number" id="number" align="center" placeholder="Your Number">
+						<input type="text" name="number" align="center" placeholder="Your Number">
 					</p>
 					<p>
 						<label>Message*:</label><br>
-						<textarea name="message" id="message" align="center" rows="5" placeholder="Write a message." required></textarea>
+						<textarea name="message" align="center" rows="5" placeholder="Write a message." required></textarea>
 					</p>
-					<div class="msgAlert">Your message has been sent</div>
 					<p class="full">
-						<button class="submit" type="submit">Submit</button>
+						<button type="submit" class="submit">Submit</button>
 					</p>
+					<input type="hidden" name="_next" value="https://villawebdesigns.com/submitted.html"/>
 				</form>
 		</section>
 		<footer>

@@ -11,7 +11,6 @@ $(document).ready(function() {
 		$("#bar1").delay(2000).fadeOut();
 		$("#bar2").delay(2000).fadeOut();
 		$("#bar3").delay(2000).fadeOut();
-		$("nav").delay(1000).fadeIn(1000);
 		$(".topnavbar").delay(1000).fadeIn(1000);
 		$(".homebg").delay(1000).fadeIn(500);
 		$(".spacebg").delay(1000).fadeIn(500);
