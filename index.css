@@ -161,21 +161,25 @@ hr {
 #box1 {
 	background:url(img/pic1.png);
 	background-size: cover;
+	background-position: center;
 }
 
 #box2 {
 	background:url(img/pic2.png);
 	background-size: cover;
+	background-position: center;
 }
 
 #box3 {
 	background:url(img/pic3.png);
 	background-size: cover;
+	background-position: center;
 }
 
 #box4 {
 	background:url(img/pic4.png);
 	background-size: cover;
+	background-position: center;
 }
 
 #boxText1, #boxText2 {
