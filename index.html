@@ -2,35 +2,91 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-
-		<!-- Add icon library -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<!-- Add icon library end -->
-
-		<link rel="stylesheet" href="style.css">
-		<title>John Villa's Portfolio</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100|Inconsolata|Oxygen" rel="stylesheet">
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+		<title>John Villa - Portfolio</title>
 	</head>
-
 	<body>
-		<div class="profile">
-			<img src="http://i65.tinypic.com/14l1uso_th.jpg" alt="" class="profile-img">
+		<header id="showcase">
 			<h1>John Villa</h1>
-			<h4>Web Developer</h4>
-			<ul>
-				<li><a href="/Sample1" class="links">Sample 1</a></li>
-				<li><a href="/Sample2" class="links">Sample 2</a></li>
-				<li><a href="https://villa-webdesigns.myshopify.com" class="links">Sample 3</a></li>
-			</ul>
+			<p class="centertext">Hi, and welcome to my portfolio page!</p>
+			<p class="centertext">I am a self taught web developer specializing in front-end always eager to learn the newest technologies.</p>
+			<p class="centertext">My skills consists of HTML5 + CSS3 + Javascript + Twitter Bootstrap + JQuery + Wordpress + Shopify.</p>
+			<div class="container centertext">
+				<div class="nav">
+					<a class="a" href="#about">About</a>
+					<a class="a" href="#portfolio">Portfolio</a>
+					<a class="a" href="#contact">Contact</a>
+				</div>
+				<hr>
+			</div>
+			<a href="#about" id="invis">
+				<i id="arrow"></i>
+			</a>
+				<p class="centertext" id="arrowtext">So let's get started shall we?</p>
+			</img>
+		</header>
+		<section class="section-about">
+			<h3 class="centertext" id="about">ABOUT ME:</h3>
+			<p class="centertext">Born and raised in Brooklyn, NY.</p>
+			<p class="centertext">Graduated SUNY New Paltz Spring '18 with a B.S. in Computer Science.</p>
+			<p class="centertext">Currently, I am in the works of familiarizing myself with React.</p>
+			<p class="centertext">In my spare time while not coding, I like to go out to eat, hit the gym, and occansionally play video games.</p>
+		</section>
+		<section class="image1"></section>
+		<section class="section-portfolio">
+			<div class="container">
+				<h3 class="centertext" id="portfolio">PORTFOLIO:</h3>
+				<p class="centertext">Here are some of my works you can view:</p>
+				<br>
+			</div>
+			<div class="boxes">
+				<div class="box" id="box1">
+					<p class="centertext" id="boxText1">Sample One-page Site 1</p>
+					<a href="Sample1/index.html" target="_blank" class="btn btn-outline-light" id="link1">Click Here!</a>
+				</div>
+				<div class="box" id="box2">
+					<p class="centertext" id="boxText2">Sample One-page Site 2</p>
+					<a href="Sample1/index.html" target="_blank" class="btn btn-outline-light" id="link2">Click Here!</a>
+				</div>
+				<div class="box" id="box3">
+					<p class="centertext" id="boxText3">Sample Shopify Site</p>
+					<a href="https://villa-webdesigns.myshopify.com" target="_blank" class="btn btn-outline-light" id="link3">Click Here!</a>
+				</div>
+				<div class="box" id="box4">
+					<p class="centertext" id="boxText4">Personal Site</p>
+					<a href="https://villawebdesigns.com" target="_blank" class="btn btn-outline-light" id="link4">Click Here!</a>
+				</div>
+			</div>
+		</section>
+		<section class="image2"></section>
+		<section class="section-contact">
+			<h3 class="centertext" id="contact">CONTACT:</h3>
+			<p class="centertext">Feel free to contact me!</p>
 			<br>
-			<p>Born and raised in Brooklyn, NY. Recent Graduate of SUNY New Paltz '18 with a bachelors in Computer Science looking to integrate my skills and knowledge to the world. The above sample links are examples of some work that I have done in the past for fun.</p>
+			<button class=" btn btn-dark">
+				<a href="mailto:johnvilla360@gmail.com">Send me an email!</a>
+			</button>
+			<div class="socials">
+				<a href="https://johnvilla360.github.io" target="_blank"><i class="fab fa-github"></i></a>
+				<a href="https://www.linkedin.com/in/john-villa-973a28142/" target="_blank"><i class="fab fa-linkedin"></i></a>
+			</div>
+			<hr>
+		</section>
+		<section class="image3"></section>
+		<footer>
+			<a href="#showcase">&copy; 2018 John Villa. All rights reserved. </a>
+		</footer>
 
-			<ul>
-				<li><a href="https://www.facebook.com" class="fa fa-facebook"></a><li>
-				<li><a href="https://www.twitter.com" class="fa fa-twitter"></a><li>
-				<li><a href="https://www.tumblr.com" class="fa fa-tumblr"></a><li>
-				<li><a href="https://www.instagram.com" class="fa fa-instagram"></a><li>	
-				<li><a href="https://www.plus.google.com" class="fa fa-google"></a><li>	
-			</ul>
-		</div>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js" integrity="sha384-u/bQvRA/1bobcXlcEYpsEdFVK/vJs3+T+nXLsBYJthmdBuavHvAW6UsmqO2Gd/F9"
+        crossorigin="anonymous"></script>
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+	        crossorigin="anonymous"></script>
+	    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	        crossorigin="anonymous"></script>
+	    <script src="scripts/script.js"></script>
 	</body>
 </html>

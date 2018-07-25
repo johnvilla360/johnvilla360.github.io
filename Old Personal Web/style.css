@@ -1,0 +1,424 @@
+/* HTML,BODY Edits */
+html, body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	line-height: normal;
+	overflow-x: hidden; 
+	overflow-y: hidden;
+}
+
+/* Top Blue Bar */
+#bar1 {
+	height: 33%;
+	background: linear-gradient(to left, #003399 0%, #0099cc 100%);
+	width: 100%;
+	visibility: hidden;
+	position: absolute;
+	animation: 0.5s ease-out anim1 forwards;
+}
+
+/* Middle White/Gray Bar */
+#bar2 {
+	height: 33%;
+	background: linear-gradient(to right, #ffffff 0%, #c4c2c1 100%);
+	width: 100%;
+	top: 33%;
+	visibility: hidden;
+	position: absolute;
+	animation: 1s ease-out 1s anim2 forwards;
+}
+
+/* Bottom Blue Bar */
+#bar3 {
+	height: 34%;
+	background: linear-gradient(to right, #003399 0%, #0099cc 100%);
+	width: 100%;
+	top: 66%;
+	visibility: hidden;
+	position: absolute;
+	animation: 1s ease-out 2s anim3 forwards;
+}
+
+/* Text on Top Blue Bar */
+.whitetext1 {
+	color: white;
+	text-align: center;
+	font-size: 170px;
+	font-family: 'Signika', sans-serif;
+	visibility: hidden;
+	animation: 1s ease-out 1s texteffect1 forwards;
+}
+
+/* Text on Bottom Blue Bar */
+.whitetext2 {
+	color: white;
+	text-align: center;
+	font-size: 190px;
+	font-family: 'Poiret One', cursive;
+	visibility: hidden;
+	animation: 1s ease-out 3s texteffect2 forwards;
+}
+
+/* Text on Middle White/Gray Bar */
+.blacktext {
+	color: black;
+	text-align: center;
+	font-size: 170px;
+	font-family: 'Dancing Script', cursive;
+	visibility: hidden;
+	animation: 1s ease-out 2s texteffect3 forwards;
+}
+
+/* Join Now Button */
+.continue {
+	z-index: 2;
+	position: absolute;
+	margin-left: 45%;
+	bottom: 35%;
+	color: #1d3882;
+	border: 2px solid #1d3882;
+	border-radius: 15px;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	background: rgba(255,255,255,1);
+	transition: .5s;
+	cursor: pointer;
+	font-family: 'Ropa Sans', sans-serif;
+	font-size: 24px;
+	visibility: hidden;
+	outline: none;
+	animation: 1s ease-out 4.5s buttoneffect forwards;
+}
+
+/*Underline Text Color*/
+u {
+	color: white;
+	text-decoration-color: #66D98C;
+}
+
+/* Hover Effect On Join Now Button */
+.continue:hover {
+	background-color: #d4120f;
+	opacity: 0.8;
+	color: white;
+	border: white;
+}
+
+/*Top Nav Bar */
+.topnavbar {
+	display: none;
+	margin-bottom: 100px;
+}
+
+nav {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 150px;
+	background-color: #0099CC;
+}
+
+/* Logo on Top Nav */
+.logo {
+	padding: 20px 20px 0px 30px;
+	height: 80px;
+	float: left;
+	font-size: 24px;
+}
+
+#line {
+	position: absolute;
+	top: 70px;
+	left: 40px;
+	width: 95%;
+	height: 1px;
+	background-color: white;
+}
+
+nav ul {
+	position: absolute;
+	list-style: none;
+	margin-top: 70px;
+	margin-left: 40%;
+	padding: 0;
+	display: flex;
+}
+
+nav ul li {
+	list-style: none;
+}
+
+nav ul li a {
+	line-height: 80px;
+	color: #151515;
+	padding: 12px 40px;
+	border-radius: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: 0.5s;
+}
+
+nav ul li a:hover {
+	text-decoration: none;
+	cursor: pointer;
+	background-color: white;
+	color: #0099CC;
+	border-radius: 20px;
+}
+
+nav ul li a:active, a:visited, a:focus {
+	text-decoration: none;
+	color: #151515;
+}
+
+/* Home Page Image */
+.homebg {
+	width: 100%;
+	height: 860px;
+	background-image: url(img/codingpic.jpeg);
+	background-size: cover;
+	background-position: center;
+	display: none;
+}
+
+.homebg-overlay {
+	width: 100%;
+	height: 860px;
+	background: rgba(0,0,0,0.4);
+	background-size: cover;
+	background-position: center;
+}
+
+.hometext h1 {
+	padding-top: 250px;
+	padding-bottom: 10px;
+	margin: auto;
+	color: white;
+	text-align: center;
+	font-size: 170px;
+}
+
+.hometext h4 {
+	color: white;
+	text-align: center;
+	font-size: 24px;
+}
+
+.sectiontitle {
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 100px;
+	display: none;
+}
+
+.content1 {
+	background-color: #f5f3f1; 
+	width: 100%;
+	height: 450px;
+	display: none;
+}
+
+.row1 {
+	width: 100%;
+	text-align: center;
+}
+
+.glyphicon {
+	position: static;
+}
+
+.column {
+
+	margin: 50px 45px 50px 45px;
+	display: inline-block;
+	height: 350px;
+	width: 350px;
+	background-color: white;
+	box-shadow: 2px 2px 5px grey;
+	border: 2px solid #0099CC;
+	border-radius: 15px;
+}
+
+span {
+	font-size: 72px;
+	padding: 85px 50px 50px 50px;
+}
+
+span h1 {
+	padding-top: 30px;
+	color: #1E328C;
+}
+
+span h4 {
+	color: #000;
+}
+
+#icon1 {
+	color: #FFE818;
+}
+
+#icon2 {
+	color: #66D98C;
+}
+
+#icon3 {
+	color: #2845C4;
+}
+
+.spacebg {
+	width: 100%;
+	height: 760px;
+	background-image: url(img/spacebg.jpg);
+	background-size: cover;
+	background-position: center;
+	display: none;
+}
+
+.spacebg-overlay {
+	width: 100%;
+	height: 760px;
+	background: rgba(0,0,0,0.4);
+	background-size: cover;
+	background-position: center;
+}
+
+.content3 {
+	display: none;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.myinfo h4 {
+	color: #41339e;
+	text-align: center;
+	font-size: 36px;
+	padding-bottom: 24px;
+}
+
+.myinfo {
+	width: 40%;
+	height: 575px;
+	border: 1px solid black;
+	margin: auto;
+	padding: auto;
+	box-shadow: 2px 2px 5px grey;
+	border: 2px solid #0099CC;
+	border-radius: 15px;
+}
+
+.myinfo p {
+	padding-left: 30px;
+	font-size: 18px;
+}
+
+.contact {
+	width: 55%;
+	height: 575px;
+	border: 1px solid black;
+	margin: auto;
+	padding: auto;
+	box-shadow: 2px 2px 5px grey;
+	border: 2px solid #0099CC;
+	border-radius: 15px;
+}
+
+.contact h4 {
+	color: #41339e;
+	text-align: center;
+	font-size: 36px;
+}
+
+.contact p {
+	padding-left: 30px;
+}
+
+label {
+	display: inline-block;
+	width: 100px;
+	text-align: left;
+}
+
+input[type=text], textarea {
+	width: 40%;
+	padding: 12px;
+	border-radius: 5px;
+}
+
+textarea {
+	width: 70%;
+	resize: none;
+}
+
+.msgAlert {
+	margin: 0 auto;
+	margin-bottom: 10px;
+	position: relative;
+	display: none;
+	padding: 10px;
+	background-color: #60f27b;
+	color: white;
+	width: 80%;
+	text-align: center;
+}
+
+.submit {
+	position: relative;
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	text-decoration: none;
+	cursor: pointer;
+	background-color: #1F70CC;
+	color: white;
+	border-radius: 5px;
+	border: none;
+	padding: 12px 16px 12px 16px; 
+}
+
+footer {
+	padding-top: 18px;
+	color: white;
+	text-align: center;
+	background-color: #4A79B8; 
+	height: 50px;
+	display: none;
+}
+
+/* Keyframes for animations */
+@keyframes anim1 {
+	0% {transform: translateX(100%); visibility: visible;}
+	100% {transform: translateX(0%); visibility: visible;}
+}
+
+@keyframes anim2 {
+	0% {transform: translateX(-100%); visibility: visible;}
+	100% {transform: translateX(0%); visibility: visible;}
+}
+
+@keyframes anim3 {
+	0% {transform: translateX(100%); visibility: visible;}
+	100% {transform: translateX(0%); visibility: visible;}
+}
+
+@keyframes buttoneffect {
+	0% {transform: translateY(20%); visibility: visible; opacity: 0.1;}
+	100% {transform: translateY(0%); visibility: visible; opacity: 1;}
+}
+
+@keyframes texteffect1 {
+	0% {transform: translateY(-10%); visibility: visible; opacity: 0.1;}
+	100% {transform: translateY(0%); visibility: visible; opacity: 1;}
+}
+
+@keyframes texteffect2 {
+	0% {transform: translateX(10%); visibility: visible; opacity: 0.1;}
+	100% {transform: translateX(0%); visibility: visible; opacity: 1;}
+}
+
+@keyframes texteffect3 {
+	0% {transform: translateX(-10%); visibility: visible; opacity: 0.1;}
+	100% {transform: translateX(0%); visibility: visible; opacity: 1;}
+}
