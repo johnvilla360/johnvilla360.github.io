@@ -1,0 +1,53 @@
+.center {
+	text-align: center;
+}
+
+.infoContainer {
+	display: grid;
+	grid-template-columns: 100px 100px 100px;
+	text-align: center;
+	justify-content: center;
+}
+
+.infoBox {
+	border: 1px grey solid;
+	text-align: center;
+	padding: 10px;
+}
+
+.gameContainer {
+	display: grid;
+	grid-template-columns: 100px 100px 100px;
+	grid-template-rows: 100px 100px 100px;
+	text-align: center;
+	justify-content: center;
+}
+
+.gameBox {
+	border: 1px black solid;
+	font-size: 24px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.gameBox:hover {
+	background-color: grey;
+}
+
+#newGame {
+	background-color: green;
+	color: white;
+}
+
+#playerOne, #playerTwo {
+	background-color: grey;
+}
+
+.winner {
+	display: none;
+	text-align: center;
+	font-size: 24px;
+	padding: 10px;
+	color: black;
+}
