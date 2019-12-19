@@ -41,15 +41,3 @@ $(function () {
         $('#link3').css('visibility', 'hidden');
     });
 });
-
-$(function () {
-    $('#box4').hover(function () {
-        $('#box4').css('opacity', '0.7');
-        $('#boxText4').css('visibility', 'visible');
-        $('#link4').css('visibility', 'visible');
-    }, function () {
-        $('#box4').css('opacity', '1');
-        $('#boxText4').css('visibility', 'hidden');
-        $('#link4').css('visibility', 'hidden');
-    });
-});
