@@ -174,8 +174,6 @@ hr {
 	background:url(img/pic3.png);
 	background-size: cover;
 	background-position: center;
-	display: block;
-	margin: 0 auto;
 }
 
 #boxText1, #boxText2 {
